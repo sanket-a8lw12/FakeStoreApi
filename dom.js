@@ -16,8 +16,8 @@ function createDiv(product) {
   newDiv.innerHTML = `
 
     <div class="card">
+      <h4 class="card-title">${product.title}</h4>
       <img class="card-img-top" src="${product.image}">
-      <h5 class="card-title">${product.title}</h5>
       <b>$${product.price}</b>
       <p >${product.description}</p>
       <b>${product.category}</b>
