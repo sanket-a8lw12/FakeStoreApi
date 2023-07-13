@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signUpStyle.css">
+</head>
+
+<body>
+    <div class="container-sign-up" id="id01">
+        <div class="sign-up-body">
+            <div class="sign-up-text">
+                <form action="">
+                <h3>Sign Up</h3>
+                <p>Please fill in this form to create an account.</p>
+            </div>
+            <div class="sign-up-fname signup-column">
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" required>
+            </div>
+
+            <div class="sign-up-lname signup-column">
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Last Name" name="lname" required>
+            </div>
+            <div class="sign-up-email signup-column">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+            </div>
+
+            <div class="sign-up-password signup-column">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+            </div>
+
+            <div class="sign-up-pass-repeat signup-column">
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            </div>
+
+            <label>
+                <input type="checkbox" checked="checked" name="terms" style="margin-bottom:15px"> I Agree to terms
+            </label>
+            
+            <button type="submit" id="signupbutton">Sign Up</button>
+        </form>
+        </div>
+    </div>
+
+    <script src="./signUpPage.js"></script>
+</body>
+
+</html>
