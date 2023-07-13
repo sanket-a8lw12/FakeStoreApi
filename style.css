@@ -35,6 +35,12 @@ a{
     
 }
 
+.Category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
 .card{
