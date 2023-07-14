@@ -149,3 +149,10 @@ a{
 
 /* class="card-text" */
 
+.about-text-p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: 1150em;
+}
