@@ -9,49 +9,74 @@
 </head>
 
 <body>
+    <div class="nav-bar">
+        <h1>Online Store</h1>
+            <ul>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./signUp.html">SignUp</a>
+            </ul>
+    </div>
+   <div class="container-main">
     <div class="container-sign-up" id="id01">
         <div class="sign-up-body">
-            <form action="" class="sign-up-body">
-                <div class="sign-up-text">
+            <form action="./index.html" class="sign-up-body" onsubmit="return validateForm()" method="get" name="myForm">
+                <div class="sign-up-text form-design">
                     <h3>Sign Up</h3>
                     <p>Please fill in this form to create an account.</p>
                 </div>
-                <div class="sign-up-fname signup-column">
+                <div class="signup-column form-design" id="fname" >
                     <label for="fname"><b>First Name</b></label>
-                    <input type="text" id="firstName" placeholder="Enter First Name" name="fname" required>
+
+                    <input type="text" name="fname"  required>
+                    <span class="formError"></span>
                 </div>
 
-                <div class="sign-up-lname signup-column">
+                <div class="signup-column form-design" id="lname">
                     <label for="lname"><b>Last Name</b></label>
-                    <input type="text" id="lastName" placeholder="Enter Last Name" name="lname" required>
+
+                    <input type="text" name="lname"  required>
+                    <span class="formError"></span>
                 </div>
-                <div class="sign-up-email signup-column">
+                <div class="signup-column form-design" id="email">
                     <label for="email"><b>Email</b></label>
-                    <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
+                    <input type="text" name="femail" id="emailID"  required>
+                    <span class="formError"></span>
                 </div>
 
-                <div class="sign-up-password signup-column">
+                <div class="signup-column form-design" id="password">
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+
+
+                    <input type="password" name="fpassword" id="passwordID" required>
+                    <span class="formError"></span>
                 </div>
 
-                <div class="sign-up-pass-repeat signup-column">
+                <div class="signup-column form-design" id="repeatPassword">
                     <label for="psw-repeat"><b>Repeat Password</b></label>
-                    <input type="password" id="repeatPassword" placeholder="Repeat Password" name="psw-repeat" required>
+    
+
+                    <input type="password" name="frepeatPassword" id="repeatPasswordId" required>
+                    <span class="formError"></span>
                 </div>
 
-                <label>
-                    <input type="checkbox" id="checkBox" checked="checked" name="terms" style="margin-bottom:15px"> I
-                    agree
-                    to terms
-                </label>
+                <div class="signup-column form-design" id="checkbox">
+                    <label>
+                        <input type="checkbox" id="checkboxId" name="terms" style="margin-bottom:15px">
+                        I agree to terms
+                    </label>
+                    <span class="formError"></span>
+                </div>
 
                 <button type="submit" class="">Sign Up</button>
             </form>
         </div>
     </div>
+   </div>
 
     <script src="./signUpPage.js"></script>
 </body>
 
 </html>
+
