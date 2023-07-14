@@ -20,6 +20,9 @@ function createDiv(product) {
       <img class="card-img-top" src="${product.image}">
       <b>$${product.price}</b>
       <p >${product.description}</p>
+      <div>
+        ${product.ratings}
+      </div>
       <b>${product.category}</b>
       <button>Buy Now</button>
     </div>
@@ -27,3 +30,14 @@ function createDiv(product) {
     `;
   conatiner.appendChild(newDiv);
 }
+
+
+window.addEventListener("load", ()=>{
+  const loader = document.querySelector(".loader");
+
+  loader.classList.add("loader-hidden");
+
+  loader.addEventListener("transitionend", ()=>{
+    document.body.removeChild("loader");
+  })
+})
